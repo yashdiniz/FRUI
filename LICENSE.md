@@ -1,0 +1,1 @@
+The code and documentation in this repository are under [No License](https://choosealicense.com/no-permission/).

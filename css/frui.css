@@ -1,0 +1,429 @@
+/*
+	Yash's Flat & Round User Interface(YFRUI)(pronounced e-froo-ey)
+	is a new UI designed by me. Inspired by Material UI(https://material.io)
+	but less materialistic, this is my venture into building basic UI frameworks
+	with a minimalistic and professional look.
+	I plan on using this UI for all my personal web projects from now on.
+
+	This code serves to be a template for this website.
+
+	author: Yash Diniz;
+	THE CONTENTS OF THIS FILE IS CURRENTLY UNDER NO LICENSE, AND SO THE AUTHOR RESERVES ALL RIGHTS.
+
+	Required: fonts of weights 300, 400, 500, 700;
+*/
+
+*, html, body {
+	font-family: "Roboto", "Helvetica Neue", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.frui-container {
+	font-family: "Helvetica Neue", sans-serif;
+	background-color: #f5f5f5;
+	display: grid;
+}
+.frui-section {
+	padding: 50px 0 0 20px;
+}
+.frui-hero {
+	background-size: cover;
+	background-attachment: fixed;	/* prevent background scroll */
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	text-align: center;
+	align-content: center;
+	font-size: 24px;
+	width: 100%;
+}
+.frui-panel {
+	border: solid thin #aaa;
+	border-radius: 1rem;
+	padding: 10px;
+	margin: 20px 30px 20px 30px;
+}
+.frui-grid-container {				/* for an element with basic grid */
+	display: grid !important;
+	padding: 10px;
+}
+
+/* side drawer in FRUI */
+.frui-drawer {
+	font-family: "Helvetica Neue", sans-serif;
+	background-color: #f5f5f5;
+	position: fixed;
+	height: 100%;
+	width: 200px;
+	border-right: solid thin #e2e2e2;
+}
+.frui-drawer li {
+	color: #424242;
+	padding: 15px 10px 15px 5px;
+}
+.frui-drawer li:hover, .frui-drawer li:active {
+	transition: ease .5s;
+	background-color: #e2e2e2;
+}
+
+/* dividers in FRUI */
+.frui-divider-bottom, .frui-divider {
+	border-bottom: solid thin #bbb;
+}
+.frui-divider-top {
+	border-top: solid thin #bbb;
+}
+.frui-divider-left {
+	border-left: solid thin #bbb;
+}
+.frui-divider-right {
+	border-right: solid thin #bbb;
+}
+
+/* FRUI logos */
+img.frui-logo {
+	border: none;
+	border-radius: 1rem;
+}
+
+p {
+	margin: 10px;
+	text-align: justify;
+	line-height: 24px;
+	color: #424242;
+	/*overflow-wrap: break-word;
+	hyphens: auto;*/
+}
+a:link, a:active {
+	font-weight: 500;
+	color: #1A73E8;
+	text-decoration: none;
+}
+a:visited {
+	color: #7B1FA2;
+}
+a:hover {
+	color: #174EA6;
+}
+/*This is the default look for all a*/
+a img {
+	transition: ease .5s;
+	transform: matrix(1,0,0,1,0,0);			/* 2x2 matrix with translateX, translateY as the 6 values */
+	-moz-transform: matrix(1,0,0,1,0,0);	/* 2x2 matrix with translateX, translateY as the 6 values */
+	-webkit-transform: matrix(1,0,0,1,0,0);	/* 2x2 matrix with translateX, translateY as the 6 values */
+}
+a:hover img {
+	transition: ease-in-out .5s;
+	transform: matrix(1.1,0,0,1.1,0,5);			/* 2x2 matrix with translateX, translateY as the 6 values */
+	-moz-transform: matrix(1.1,0,0,1.1,0,5);	/* 2x2 matrix with translateX, translateY as the 6 values */
+	-webkit-transform: matrix(1.1,0,0,1.1,0,5);	/* 2x2 matrix with translateX, translateY as the 6 values */
+	/*box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.2);*/
+}
+
+
+/* typography */
+.frui-text-largest {
+	font-weight: 300;
+	font-size: 112px;
+	line-height: 112px;
+}
+.frui-text-large {
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 50px;
+}
+h1, .frui-text-headline {
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 42px;
+	margin: 10px 0 10px 0;
+	color: #414141;
+}
+h2, .frui-text-title {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+	margin: 10px 0 10px 0;
+}
+h3, .frui-text-subhead {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 10px 0 10px 0;
+}
+h4, h5, h6, .frui-text-body {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 10px 0 10px 0;
+}
+.frui-text-caption {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	color: #414141;
+}
+.frui-text-menu {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+}
+.frui-text-button {
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+/* BUTTONS in FRUI */
+.frui-btn {
+	padding: 0 26px;
+	display: inline-block;
+	background-color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	font-family: inherit;
+	letter-spacing: 0.03em;
+	line-height: 36px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	text-align: center;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	-webkit-user-select: none;		/* prevent user selecting the text inside the textbox */
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	position: relative;
+	overflow: hidden;
+	outline: none !important;
+	outline: 0 !important;
+	border:none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.frui-btn--large {
+	line-height: 50px;
+}
+.frui-btn--primary {
+	color: white;
+	background-color: #4fa2f8;
+}
+.frui-btn--danger {
+	color: white;
+	background-color: #ff1719;
+}
+.frui-btn + .frui-btn {	/* two FRUI buttons next to each other! */
+	margin-left: 10px;
+}
+.frui-btn:hover {
+	outline: none !important;
+	outline: 0 !important;
+	border: none;
+	transition: ease .35s;
+	opacity: 0.8;
+}
+.frui-btn:active {
+	outline: none !important;
+	outline: 0 !important;
+	border: none;
+}
+.frui-btn:focus {
+	outline: none !important;
+	outline: 0 !important;
+	border: none;
+	opacity: 0.9;
+}
+.frui-btn:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.60;
+}
+
+/* footers in FRUI? */
+.frui-footer-section {
+	padding: 10px;
+	background-color: #242424;
+	color: white;
+}
+footer .frui-copyright-section {
+	color: white;
+	font-weight: 300;
+	padding: 20px;
+	text-align: center;
+}
+.frui-footer-section a {
+	color: white;
+	font-weight: 500;
+}
+.frui-footer-section a:hover {
+	text-decoration: underline;
+}
+
+/* tables in FRUI */
+table.frui-table th {
+	font-weight: 500;
+	line-height: 15px;
+	padding: 15px;
+	background-color: #e2e2e2;
+}
+table.frui-table tr, table.frui-table td {
+	line-height: 20px;
+	padding: 15px;
+	border-bottom: solid thin #e5e5e5;
+}
+
+/* a few CSS helpers */
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+button, input, select {
+	text-transform: none;
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+.--no-user-select {	/* elements with this property prevent UI selection! */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.--overflow-hidden {
+	overflow: hidden !important;
+}
+.--overflow-hidden-x {
+	overflow-x: hidden !important;
+}
+.--overflow-hidden-y {
+	overflow-y: hidden !important;
+}
+.--show {
+	display: block !important;
+}
+.--invisible {
+	visibility: hidden;
+}
+.--hide {
+	display: none !important;
+}
+/* CSS helpers for reponsiveness */
+@media (max-width: 599px) {
+	.--visible-xs {
+		display: block !important;
+	}
+	table.--visible-xs {
+		display: table;
+	}
+	tr.--visible-xs {
+		display: table-row !important;
+	}
+	th.--visible-xs, td.--visible-xs {
+		display: table-cell !important;
+	}
+	.--visible-xs-inline {
+		display: inline !important;
+	}
+	.--visible-xs-inline-block {
+		display: inline-block !important;
+	}
+	.--hidden-xs {
+		display: none !important;
+	}
+}
+@media (min-width: 600px) and (max-width: 767px) {
+	.--visible-sm {
+		display: block !important;
+	}
+	table.--visible-sm {
+		display: table;
+	}
+	tr.--visible-sm {
+		display: table-row !important;
+	}
+	th.--visible-sm, td.--visible-sm {
+		display: table-cell !important;
+	}
+	.--visible-sm-inline {
+		display: inline !important;
+	}
+	.--visible-sm-inline-block {
+		display: inline-block !important;
+	}
+	.--hidden-sm {
+		display: none !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.--visible-md {
+		display: block !important;
+	}
+	table.--visible-md {
+		display: table;
+	}
+	tr.--visible-md {
+		display: table-row !important;
+	}
+	th.--visible-md, td.--visible-md {
+		display: table-cell !important;
+	}
+	.--visible-md-inline {
+		display: inline !important;
+	}
+	.--visible-md-inline-block {
+		display: inline-block !important;
+	}
+	.--hidden-md {
+		display: none !important;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.--visible-lg {
+		display: block !important;
+	}
+	table.--visible-lg {
+		display: table;
+	}
+	tr.--visible-lg {
+		display: table-row !important;
+	}
+	th.--visible-lg, td.--visible-lg {
+		display: table-cell !important;
+	}
+	.--visible-lg-inline {
+		display: inline !important;
+	}
+	.--visible-lg-inline-block {
+		display: inline-block !important;
+	}
+	.--hidden-lg {
+		display: none !important;
+	}
+}
+@media (min-width: 1200px) {
+	.--visible-xl {
+		display: block !important;
+	}
+	table.--visible-xl {
+		display: table;
+	}
+	tr.--visible-xl {
+		display: table-row !important;
+	}
+	th.--visible-xl, td.--visible-xl {
+		display: table-cell !important;
+	}
+	.--visible-xl-inline {
+		display: inline !important;
+	}
+	.--visible-xl-inline-block {
+		display: inline-block !important;
+	}
+	.--hidden-xl {
+		display: none !important;
+	}
+}
