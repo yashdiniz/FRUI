@@ -147,13 +147,13 @@ FRUI also supports a minimal set of text styles that can be implemented in a web
 ```html
 <div class="frui-text-largest">Largest Text</div>
 <div class="frui-text-large">Large Text</div>
-<div class="frui-text-headline">Headline</div>		<!-- Similar to h1 -->
-<div class="frui-text-title">Title</div>			<!-- Similar to h2 -->
-<div class="frui-text-subhead">Subhead</div>		<!-- Similar to h3 -->
+<div class="frui-text-headline">Headline</div>      <!-- Similar to h1 -->
+<div class="frui-text-title">Title</div>            <!-- Similar to h2 -->
+<div class="frui-text-subhead">Subhead</div>        <!-- Similar to h3 -->
 <div class="frui-text-body">Body</div>
 <div class="frui-text-caption">Caption</div>
 <div class="frui-text-menu">Menu</div>
-<div class="frui-text-button">Button</div>			<!-- For button text -->
+<div class="frui-text-button">Button</div>          <!-- For button text -->
 ```
 
 ## Buttons
