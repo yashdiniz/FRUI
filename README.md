@@ -3,7 +3,7 @@
 The Flat & Round User Interface(FRUI)(pronounced froo-ey) is a lightweight CSS framework. Inspired by [Material UI](https://material.io) but less _materialistic_, this is my venture into building basic UI frameworks with a minimalistic and professional look.
 
 Designed to be a lightweight, minimalistic, and developer-friendly framework, the focus shall be mainly on the following:
-+ Using a separate namespace(prefix frui-* for all CSS classes) to stay flexible.
++ Using a separate namespace(prefix `frui-*` for all CSS classes) to stay flexible.
 + Reducing external dependencies.
 + Small file sizes.
 + Cross platform.
@@ -83,14 +83,16 @@ Divider color/width customisation:
 ```html
 <h2>Illustrating customisability of frui-dividers</h2>
 <div class="frui-divider" style="border-color: red; border-width: 3px;"></div>
-<p>The thick red divider above this paragraph is very easy to customise! Here we customised the color(border-color) and width(border-width) of the divider.</p>
+<p>The thick red divider above this paragraph is very easy to customise!
+ Here we customised the color(border-color) and width(border-width) of the divider.</p>
 ```
 
 ## Panels and Sections
 FRUI Sections are the simplest way to make sections within your page.
 ```html
 <div class="frui-section">
-<!-- This is used to add padding to the top and bottom of this element. It helps provide a spacious look to the whole page -->
+<!-- This is used to add padding to the top and bottom of this element.
+	 It helps provide a spacious look to the whole page -->
 <!-- Content like panels go here -->
 </div>
 ```
@@ -106,7 +108,8 @@ For example,
 	<center>
 	<span style="border-color: blue;" class="frui-divider frui-text-headline">Easy and Intuitive!</span>
 	<p style="width: 75%;">
-		FRUI is not only easy and intuitive for the end user, but for the developer too! This little segment of code creates a nice looking, minimalistic and professional panel within a section.<br>
+		FRUI is not only easy and intuitive for the end user, but for the developer too!
+		This little segment of code creates a nice looking, minimalistic and professional panel within a section.<br>
 		This section is also tagged(using the HTML <code>id</code> attribute) and can thus be anchored as follows:<br>
 		<a href="#illustration">Illustration of Panels and Sections</a>
 	</p>
@@ -157,17 +160,25 @@ FRUI also supports a minimal set of text styles that can be implemented in a web
 Attaching the `.frui-btn` class to any `<a>`,`<input type="button">`,`<input type="submit">` or `<button>` element.
 All `.frui-btn` elements should preferably be accompanied with a CSS helper class like `.frui-btn--large`, `.frui-btn--primary` or `.frui-btn--danger`
 ```html
-<button class="frui-btn">Default</button>	<!-- the default, flat button -->
+<!-- the default, flat button -->
+<button class="frui-btn">Default</button>
 
-<button class="frui-btn frui-btn--flat">Default Flat</button>	<!-- same as above, but more effective -->
-<button class="frui-btn frui-btn--large">Default Large</button>	<!-- the default, flat button, but much larger -->
+<!-- same as above, but more effective -->
+<button class="frui-btn frui-btn--flat">Default Flat</button>
+<!-- the default, flat button, but much larger -->
+<button class="frui-btn frui-btn--large">Default Large</button>
 
-<button class="frui-btn frui-btn--primary">Default Primary</button>	<!-- the primary, blue button -->
-<button class="frui-btn frui-btn--danger">Default Danger</button>	<!-- the danger, red button -->
+<!-- the primary, blue button -->
+<button class="frui-btn frui-btn--primary">Default Primary</button>
+<!-- the danger, red button -->
+<button class="frui-btn frui-btn--danger">Default Danger</button>
 
-<button class="frui-btn frui-btn--primary frui-btn-large">Default Large Primary</button>	<!-- a primary, large button -->
+<!-- a primary, large button -->
+<button class="frui-btn frui-btn--primary frui-btn-large">Default Large Primary</button>
 
-<button class="frui-btn frui-btn--primary" disabled="">Disabled</button>	<!-- This button will be disabled -->
+<!-- This button will be disabled -->
+<button class="frui-btn frui-btn--primary" disabled="">Disabled</button>
 
-<button class="frui-btn frui-btn--fab">+</button>	<!-- This is a Floating Action Button, designed to be a round button -->
+<!-- This is a Floating Action Button, designed to be a round button -->
+<button class="frui-btn frui-btn--fab">+</button>
 ```
