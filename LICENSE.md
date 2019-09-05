@@ -1,1 +1,1 @@
-The code and documentation in this repository are under [No License](https://choosealicense.com/no-permission/).
+The works in this repository are under [No License](https://choosealicense.com/no-permission/).
