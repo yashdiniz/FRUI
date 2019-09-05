@@ -1,5 +1,6 @@
 /*
-	Yash's Flat & Round User Interface(YFRUI)(pronounced e-froo-ey)
+	! https://github.com/yashdiniz/FRUI
+	Flat & Round User Interface(YFRUI)(pronounced e-froo-ey)
 	is a new UI designed by me. Inspired by Material UI(https://material.io)
 	but less materialistic, this is my venture into building basic UI frameworks
 	with a minimalistic and professional look.
@@ -8,10 +9,13 @@
 	This code serves to be a template for this website.
 
 	author: Yash Diniz;
-	THE CONTENTS OF THIS FILE IS CURRENTLY UNDER NO LICENSE, AND SO THE AUTHOR RESERVES ALL RIGHTS.
+	THIS WORK IS CURRENTLY UNDER NO LICENSE, AND SO THE AUTHOR RESERVES ALL RIGHTS.
 
 	Required: fonts of weights 300, 400, 500, 700;
 */
+
+/* YES! FRUI contains normalize.css inbuilt!! So no worries, developers! */
+@import url('css/normalize.css');
 
 *, html, body {
 	font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -78,6 +82,16 @@
 }
 .frui-divider-right {
 	border-right: solid thin #bbb;
+}
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	height: 1px;
+	background-color: #bbb;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	overflow: visible;
 }
 
 /* FRUI logos */
@@ -151,13 +165,13 @@ h3, .frui-text-subhead {
 	line-height: 28px;
 	margin: 10px 0 10px 0;
 }
-h4, h5, h6, .frui-text-body {
+h4, .frui-text-body {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 24px;
 	margin: 10px 0 10px 0;
 }
-.frui-text-caption {
+h5, h6, .frui-text-caption {
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 16px;
@@ -173,13 +187,23 @@ h4, h5, h6, .frui-text-body {
 	font-size: 16px;
 	text-transform: uppercase;
 }
+b, strong {
+	font-weight: bolder;
+	font-weight:700;
+}
+abbr[title] {
+	border-bottom: none;
+	-webkit-text-decoration: underline dotted;
+	text-decoration: underline dotted;
+}
 
 /* BUTTONS in FRUI */
 .frui-btn {
 	padding: 0 26px;
 	display: inline-block;
-	background-color: #fff;
-	font-weight: 400;
+	background-color: #f5f5f5;
+	color: black;
+	font-weight: 400 !important;
 	font-size: 16px;
 	font-family: inherit;
 	letter-spacing: 0.03em;
@@ -206,12 +230,39 @@ h4, h5, h6, .frui-text-body {
 	line-height: 50px;
 }
 .frui-btn--primary {
-	color: white;
+	color: white !important;
 	background-color: #4fa2f8;
 }
+.frui-btn--flat {
+	color: black !important;
+	background-color: #f5f5f5;
+}
 .frui-btn--danger {
-	color: white;
+	color: white !important;
 	background-color: #ff1719;
+}
+.frui-btn--fab {
+	position: relative;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	z-index: 1;
+}
+.frui-caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin: 0 0 0 .125rem;
+	vertical-align: middle;
+	border-top: .25rem solid;
+	border-right: .25rem solid transparent;
+	border-left: .25rem solid transparent;
+}
+.frui-btn--raised, .frui-btn--fab {
+    -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 .frui-btn + .frui-btn {	/* two FRUI buttons next to each other! */
 	margin-left: 10px;
@@ -313,6 +364,9 @@ button, input, optgroup, select, textarea {
 }
 /* CSS helpers for reponsiveness */
 @media (max-width: 599px) {
+	html, body {
+		min-width: 600px;
+	}
 	.--visible-xs {
 		display: block !important;
 	}
