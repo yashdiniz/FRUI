@@ -6,6 +6,8 @@
 	with a minimalistic and professional look.
 	I plan on using this UI for all my personal web projects from now on.
 
+	This code serves to be a template for this website.
+
 	author: Yash Diniz;
 	THIS WORK IS CURRENTLY UNDER NO LICENSE, AND SO THE AUTHOR RESERVES ALL RIGHTS.
 
@@ -103,8 +105,8 @@ p {
 	text-align: justify;
 	line-height: 24px;
 	color: #424242;
-	/*overflow-wrap: break-word;
-	hyphens: auto;*/
+	overflow-wrap: break-word;
+	/*hyphens: auto;*/
 }
 a:link, a:active {
 	font-weight: 500;
