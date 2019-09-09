@@ -67,6 +67,11 @@
 	background-color: #e2e2e2;
 }
 
+/* image slider in FRUI */
+.frui-image-slider img {
+	width: 100%;
+}
+
 /* dividers in FRUI */
 .frui-divider-bottom, .frui-divider {
 	border-bottom: solid thin #bbb;
