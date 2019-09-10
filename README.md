@@ -14,7 +14,7 @@ FRUI is simple and minimalistic, and is quick to learn for somebody who already 
 >Check [LICENSE.md](//github.com/yashdiniz/FRUI/blob/master/LICENSE.md).
 
 ## Boilerplate code
-FRUI already includes [normalize.css](https://necolas.github.io/normalize.css/) which means you may keep this as the base CSS file.
+FRUI already includes [normalize.css](https://necolas.github.io/normalize.css/) and [jQuery](https://jquery.com/) which means you may keep this as the base CSS file, and you do not need to load jQuery exclusively.
 
 ```html
 <!doctype html>
