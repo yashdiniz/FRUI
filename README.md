@@ -1,3 +1,5 @@
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
+
 # FRUI framework
 
 The Flat & Round User Interface(FRUI)(pronounced froo-ey) is a lightweight CSS framework. Inspired by [Material UI](https://material.io) but less _materialistic_, this is my venture into building basic UI frameworks with a minimalistic and professional look.
@@ -10,8 +12,6 @@ Designed to be a lightweight, minimalistic, and developer-friendly framework, th
 + Easy to hack and customise.
 
 FRUI is simple and minimalistic, and is quick to learn for somebody who already has previous experience in a framework like [Bootstrap](https://getbootstrap.com/) or [MUI](https://www.muicss.com/). This README will introduce you to the basics of the FRUI framework. A request to all the readers, I urge you to please go through the source code as well, and remember, this code is currently under development -- an ongoing effort, with many new features yet to come.
-
->Check [LICENSE.md](//github.com/yashdiniz/FRUI/blob/master/LICENSE.md).
 
 ## Boilerplate code
 FRUI already includes [normalize.css](https://necolas.github.io/normalize.css/) and [jQuery](https://jquery.com/) which means you may keep this as the base CSS file, and you do not need to load jQuery exclusively.
