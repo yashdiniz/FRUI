@@ -68,8 +68,36 @@
 }
 
 /* image slider in FRUI */
+.frui-image-slider {
+	position: relative;
+}
+.frui-image-slider span {
+	font-weight: 400;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	top: 50%;							/* taking the text in the middle */
+	left: 50%;
+	transform: translate(-50%, -50%);	/* translating the text to the true middle */
+	-ms-transform: translate(-50%, -50%);
+}
 .frui-image-slider img {
 	width: 100%;
+}
+.frui-image-slider .frui-cover {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	cursor: pointer;
+	display: none;
+	transition: .5s ease;
+	background-color: rgba(0,0,0,0.5);
+	color:white;
 }
 
 /* dividers in FRUI */
