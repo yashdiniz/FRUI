@@ -33,7 +33,7 @@ $(document).ready(function(e) {
 	$(".frui-image-carousel > img:first").show();	//show only the first one
 	//put an informative cover telling the user to click for more data
 	$(".frui-image-carousel").prepend(
-		$("<div>").addClass("frui-cover frui-text-subhead")
+		$("<div>").addClass("frui-cover frui-text-subhead --no-user-select")
 		.html("<span>Click or Tap to see more</span>")
 	).mouseover(function(e) { $(".frui-image-carousel .frui-cover").show(); })
 	.mouseout(function(e) { $(".frui-image-carousel .frui-cover").hide(); })

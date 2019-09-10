@@ -181,5 +181,5 @@ All `.frui-btn` elements should preferably be accompanied with a CSS helper clas
 <button class="frui-btn frui-btn--primary" disabled="">Disabled</button>
 
 <!-- This is a Floating Action Button, designed to be a round button -->
-<button class="frui-btn frui-btn--fab">+</button> 
+<button class="frui-btn frui-btn--fab">+</button>
 ```
