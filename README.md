@@ -67,7 +67,7 @@ And for better grid support you can use:
 I would recommend beginners to check the [Complete guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) to learn more about this powerful layout, and make complete use of it.
 
 ## Dividers
-FRUI dividers `.frui-divider` are a better alternative to the `<hr>` tag for horizontal dividers in HTML documents. FRUI also supports vertical dividers `.frui-divider-right`, and can be easily included into your page as shown below:
+FRUI dividers `.frui-divider` are a better alternative to the `<hr>` tag for horizontal dividers in HTML documents. FRUI also supports vertical dividers `.frui-divider--right`, and can be easily included into your page as shown below:
 ```html
 <h2>Illustrating frui-dividers</h2>
 <div class="frui-divider"></div>	<!-- Similar to an <hr> tag -->
@@ -76,7 +76,7 @@ FRUI dividers `.frui-divider` are a better alternative to the `<hr>` tag for hor
 
 For right dividers:
 ```html
-<span class="frui-text-body frui-divider-right">Illustrating right dividers</span>
+<span class="frui-text-body frui-divider--right">Illustrating right dividers</span>
 <span class="frui-text-body">These elements have a divider between them!</span>
 ```
 
