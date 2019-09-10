@@ -67,11 +67,11 @@
 	background-color: #e2e2e2;
 }
 
-/* image slider in FRUI */
-.frui-image-slider {
+/* image carousel in FRUI */
+.frui-image-carousel {
 	position: relative;
 }
-.frui-image-slider span {
+.frui-image-carousel span {
 	font-weight: 400;
 	position: absolute;
 	text-align: center;
@@ -81,10 +81,10 @@
 	transform: translate(-50%, -50%);	/* translating the text to the true middle */
 	-ms-transform: translate(-50%, -50%);
 }
-.frui-image-slider img {
+.frui-image-carousel img {
 	width: 100%;
 }
-.frui-image-slider .frui-cover {
+.frui-image-carousel .frui-cover {
 	position: absolute;
 	top: 0;
 	bottom: 0;

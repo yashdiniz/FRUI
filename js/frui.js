@@ -27,21 +27,21 @@ $(document).ready(function() {
 });
 
 
-//a very rudimentary image slider animator!
+//a very rudimentary image carousel animator!
 $(document).ready(function(e) {
-	$(".frui-image-slider > img").hide();	//hide all initially
-	$(".frui-image-slider > img:first").show();	//show only the first one
+	$(".frui-image-carousel > img").hide();	//hide all initially
+	$(".frui-image-carousel > img:first").show();	//show only the first one
 	//put an informative cover telling the user to click for more data
-	$(".frui-image-slider").prepend(
+	$(".frui-image-carousel").prepend(
 		$("<div>").addClass("frui-cover frui-text-subhead")
 		.html("<span>Click or Tap to see more</span>")
-	).mouseover(function(e) { $(".frui-image-slider .frui-cover").show(); })
-	.mouseout(function(e) { $(".frui-image-slider .frui-cover").hide(); })
+	).mouseover(function(e) { $(".frui-image-carousel .frui-cover").show(); })
+	.mouseout(function(e) { $(".frui-image-carousel .frui-cover").hide(); })
 	.click(function(e) {
-		$(".frui-image-slider .frui-cover").hide();
+		$(".frui-image-carousel .frui-cover").hide();
 		$(this).off("mouseover").off("mouseout");
 	});
-	$(".frui-image-slider img").click(function(e) {	//upon clicking an image
+	$(".frui-image-carousel img").click(function(e) {	//upon clicking an image
 		var img = $(this);
 		$(img).hide().next("img").fadeIn(100);	//hide what's clicked and fade in the next one
 		$(img).appendTo($(img).parent());	//append current click to end of queue
