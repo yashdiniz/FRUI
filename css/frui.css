@@ -12,7 +12,7 @@
 */
 
 /* YES! FRUI contains normalize.css inbuilt!! So no worries, developers! */
-@import url('css/normalize.css');
+@import url('normalize.css');
 
 *, html, body {
 	font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -73,16 +73,16 @@
 }
 
 /* dividers in FRUI */
-.frui-divider-bottom, .frui-divider {
+.frui-divider--bottom, .frui-divider {
 	border-bottom: solid thin #bbb;
 }
-.frui-divider-top {
+.frui-divider--top {
 	border-top: solid thin #bbb;
 }
-.frui-divider-left {
+.frui-divider--left {
 	border-left: solid thin #bbb;
 }
-.frui-divider-right {
+.frui-divider--right {
 	border-right: solid thin #bbb;
 }
 hr {

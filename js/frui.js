@@ -31,6 +31,14 @@ $(document).ready(function() {
 $(document).ready(function(e) {
 	$(".frui-image-slider > img").hide();	//hide all initially
 	$(".frui-image-slider > img:first").show();	//show only the first one
+	//put an informative cover telling the user to click for more data
+	$("<div>").addClass("frui-cover")
+	.css({position:"relative",top:0,left:0,width:"100%",height:"100%",backgroundColor:"#00000033",color:"white"})
+	.hover(function(e) {
+		$(this).html("<span>").addClass("frui-text-headline")
+		.css({verticalAlign:"middle",textAlign:"center"}).text("Click or Tap to see more");
+	});
+	$(".frui-image-slider").prepend();
 	$(".frui-image-slider img").click(function(e) {	//upon clicking an image
 		var img = $(this);
 		$(img).hide().next("img").fadeIn(100);	//hide what's clicked and fade in the next one

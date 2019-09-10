@@ -24,8 +24,9 @@ FRUI already includes [normalize.css](https://necolas.github.io/normalize.css/) 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boilerplate Code</title>
-    <!-- load FRUI(assuming FRUI is stored in css/frui.css) -->
+    <!-- load FRUI(assuming FRUI is stored in css/frui.css and js/frui.js) -->
     <link href="css/frui.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/frui.js"></script>
     <!-- load custom font -->
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
     <!-- load icon font -->
