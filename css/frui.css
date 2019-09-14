@@ -74,6 +74,7 @@ iframe {
 /* image carousel in FRUI */
 .frui-image-carousel {
 	position: relative;
+	cursor: pointer;
 }
 .frui-image-carousel span {
 	font-weight: 400;
