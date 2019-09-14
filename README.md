@@ -8,7 +8,7 @@ Designed to be a lightweight, minimalistic, and developer-friendly framework, th
 + Using a separate namespace(prefix `frui-*` for all CSS classes) to stay flexible.
 + Reducing external dependencies.
 + Small file sizes.
-+ Cross platform.
++ Cross platform, with default fallback view to mobile view.
 + Easy to hack and customise.
 
 FRUI is simple and minimalistic, and is quick to learn for somebody who already has previous experience in a framework like [Bootstrap](https://getbootstrap.com/) or [MUI](https://www.muicss.com/). This README will introduce you to the basics of the FRUI framework. A request to all the readers, I urge you to please go through the source code as well, and remember, this code is currently under development -- an ongoing effort, with many new features yet to come.
