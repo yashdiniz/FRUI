@@ -2,7 +2,7 @@
 
 # FRUI framework
 
-The Flat & Round User Interface(FRUI)(pronounced froo-ey) is a lightweight CSS framework. Inspired by [Material UI](https://material.io) but less _materialistic_, this is my venture into building basic UI frameworks with a minimalistic and professional look.
+The Flat & Round User Interface(FRUI)(pronounced froo-ey) is a lightweight CSS framework. Inspired by [Material UI](https://material.io) but less _materialistic_, this is a venture into building basic UI frameworks with a minimalistic and professional look.
 
 Designed to be a lightweight, minimalistic, and developer-friendly framework, the focus shall be mainly on the following:
 + Using a separate namespace(prefix `frui-*` for all CSS classes) to stay flexible.
