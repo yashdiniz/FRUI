@@ -26,6 +26,7 @@ iframe {
 
 .frui-container {
 	font-family: "Roboto", "Helvetica Neue", sans-serif;
+	background-color: #f5f5f5;
 	display: grid;
 }
 .frui-section {
