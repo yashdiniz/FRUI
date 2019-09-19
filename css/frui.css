@@ -135,6 +135,13 @@ p {
 	overflow-wrap: break-word;
 	/*hyphens: auto;*/
 }
+ul , ol, dl {
+	margin: 10px;
+	text-align: justify;
+	line-height: 24px;
+	color: #424242;
+	overflow-wrap: break-word;
+}
 a:link, a:active {
 	font-weight: 500;
 	color: #1A73E8;
