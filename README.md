@@ -19,24 +19,24 @@ FRUI already includes [normalize.css](https://necolas.github.io/normalize.css/) 
 ```html
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Boilerplate Code</title>
-    <!-- load FRUI from CDN!!(not recommended if your client will not have internet) -->
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yashdiniz/FRUI@<version>/css/frui.min.css">
-	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/yashdiniz/FRUI@<version>/js/frui.min.js"></script>
-    <!-- load custom font -->
-    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
-    <!-- load icon font -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- add a custom css -->
-  </head>
-  <body>
-    <!-- content goes here -->
-    <i class="fa fa-github"></i>Hello GitHub!
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Boilerplate Code</title>
+		<!-- load FRUI from CDN!!(not recommended if your client will not have internet) -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/yashdiniz/FRUI@1.0.0/css/frui.min.css" />
+		<script type="text/javascript" src="//cdn.jsdelivr.net/gh/yashdiniz/FRUI@1.0.0/js/frui.min.js"></script>
+		<!-- load custom font -->
+		<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+		<!-- load icon font -->
+		<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<!-- add a custom css -->
+	</head>
+	<body>
+		<!-- content goes here -->
+		<i class="fa fa-github"></i>Hello GitHub!
+	</body>
 </html>
 ```
 

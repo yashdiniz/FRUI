@@ -50,6 +50,8 @@ iframe {
 }
 .frui-grid-container {				/* for an element with basic grid */
 	display: grid !important;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 	padding: 10px;
 }
 
@@ -226,6 +228,9 @@ abbr[title] {
 	-webkit-text-decoration: underline dotted;
 	text-decoration: underline dotted;
 }
+
+/* INPUT elements in FRUI */
+
 
 /* BUTTONS in FRUI */
 .frui-btn {
